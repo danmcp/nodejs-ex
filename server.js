@@ -109,6 +109,12 @@ app.get('/pagecount', function (req, res) {
   }
 });
 
+app.get('/test', function (req, res) {
+
+    res.send('hello cloud computing class');
+});
+
+
 // error handling
 app.use(function(err, req, res, next){
   console.error(err.stack);
